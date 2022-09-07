@@ -2,6 +2,12 @@
 ## The Topology for Zarka
 ![image](https://user-images.githubusercontent.com/58489322/188975883-3087e7ae-b692-41dd-818c-28810cbe50fb.png)
 
+## Features
+1. LSM-Tree needs to be used as our storage data structure.
+2. Consistent Hashing will be used as our partition rebalancing strategy (Only adding a
+new node should be supported).
+3. Leaderless replication will be used with configurable quorum sizes.
+
 ## The Operations and Data Flow
 Zarka have two kinds of applications:
 - Zarka Server: a node that holds data partitions and replicas. You should provide enough
@@ -24,8 +30,4 @@ There will be a configuration file used by all nodes to define system parameters
 - Quorum Read
 - Replication Factor
 
-## Features
-1. LSM-Tree needs to be used as our storage data structure.
-2. Consistent Hashing will be used as our partition rebalancing strategy (Only adding a
-new node should be supported).
-3. Leaderless replication will be used with configurable quorum sizes.
+
