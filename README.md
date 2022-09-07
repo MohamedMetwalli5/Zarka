@@ -1,3 +1,6 @@
+![License](https://img.shields.io/badge/License-MIT%20-red.svg)
+![Language](https://img.shields.io/badge/language-Java%20-orange.svg)
+
 # Zarka
 ## The Topology for Zarka
 ![image](https://user-images.githubusercontent.com/58489322/188975883-3087e7ae-b692-41dd-818c-28810cbe50fb.png)
