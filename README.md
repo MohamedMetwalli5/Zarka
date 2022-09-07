@@ -12,8 +12,8 @@ incoming data, replicas created, …. etc.)
   - `get`( key )
 <br>
 Both key and value are string values.
-
-- Zarka Client will pick any Zarka Server nodes at random and it will be the coordinator to
+<br>
+Zarka Client will pick any Zarka Server nodes at random and it will be the coordinator to
 execute his request.
 
 ## The Configuration File
@@ -23,3 +23,9 @@ There will be a configuration file used by all nodes to define system parameters
 - Quorum Write
 - Quorum Read
 - Replication Factor
+
+## Features
+1. LSM-Tree needs to be used as our storage data structure.
+2. Consistent Hashing will be used as our partition rebalancing strategy (Only adding a
+new node should be supported).
+3. Leaderless replication will be used with configurable quorum sizes.
