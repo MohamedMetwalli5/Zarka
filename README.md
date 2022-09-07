@@ -10,6 +10,7 @@ incoming data, replicas created, …. etc.)
 - Zarka Client: a command line interface where user can send two types of requests:
   - `add`( key, value)
   - `get`( key )
+<br>
 Both key and value are string values.
 
 - Zarka Client will pick any Zarka Server nodes at random and it will be the coordinator to
