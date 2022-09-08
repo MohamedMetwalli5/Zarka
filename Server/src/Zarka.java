@@ -3,7 +3,7 @@ import java.net.*;
 import java.util.*;
 
 @SuppressWarnings("InfiniteLoopStatement")
-public class MultithreadedSocketServer {
+public class Zarka {
     public static void main(String[] args) throws IOException {
         Hashtable<String, String> VN1 = new Hashtable<>();
         Hashtable<String, String> VN2 = new Hashtable<>();
@@ -14,9 +14,7 @@ public class MultithreadedSocketServer {
         Scanner in = new Scanner(System.in);
         String sharedFilePath = "D:\\ServerClientSharedFile.txt";
         String Config = "D:\\Config.txt";
-        String SSTpath = "D:\\\\SST\\\\"; // should be checked
-//        String sharedFilePath = "C:\\Users\\Kimo Store\\Desktop\\ServerClientSharedFile.txt";
-//        String configFilePath = "C:\\Users\\Kimo Store\\Desktop\\Config.txt";
+        String SSTpath = "D:\\SST\\";
 
 
         int ConsistingHashingFullRange = 1001;

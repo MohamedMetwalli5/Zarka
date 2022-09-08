@@ -17,12 +17,15 @@ public class Client {
             String clientMessage = "", serverMessage; // to store the client message and the server message respectively
             while(!clientMessage.equals("bye")){
                 port = ReadFile.read(configFilePath).split(","); // reading the ports again in case there was a new added server (new node)
-
-                socket = new Socket("127.0.0.1",Integer.parseInt(port[rand.nextInt(port.length)]));
-                inStream = new DataInputStream(socket.getInputStream());
-                outStream = new DataOutputStream(socket.getOutputStream());
-                br = new BufferedReader(new InputStreamReader(System.in));
-
+                try {
+                    socket = new Socket("127.0.0.1", Integer.parseInt(port[rand.nextInt(port.length)]));
+                    inStream = new DataInputStream(socket.getInputStream());
+                    outStream = new DataOutputStream(socket.getOutputStream());
+                    br = new BufferedReader(new InputStreamReader(System.in));
+                }catch (Exception e){
+                    System.out.println("server closed");
+                    continue;
+                }
                 System.out.println("Enter : \n 1 --> for get()\n 2 --> for add()  ");
                 System.out.print(">> ");
                 clientMessage = br.readLine(); // reading the client message

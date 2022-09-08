@@ -16,7 +16,6 @@ public class ReadFile {
             Scanner myReader = new Scanner(myObj);
             data = myReader.nextLine();
             y = Integer.parseInt(data);
-            System.out.println(data);
             data = myReader.nextLine();
             y++;
             RF = myReader.nextLine();

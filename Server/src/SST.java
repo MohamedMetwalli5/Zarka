@@ -16,18 +16,12 @@ public class SST {
                 this.myObj = new File(this.path + "\\SST.txt");
                 if (this.myObj.createNewFile()) {
                     System.out.println("File created: " + myObj.getName());
-                } else {
-                    System.out.println("File already exists.");
                 }
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-            }
+            }catch (Exception e){}
             this.segmants = 0;
             this.segmant = new AVLTree();
             this.temp = new AVLTree();
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
+        }catch (Exception e){}
     }
     public void addToLsm(List<Hashtable<String,String>> mem) throws IOException {
         try {

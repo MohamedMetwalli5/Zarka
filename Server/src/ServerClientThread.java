@@ -19,8 +19,6 @@ class ServerClientThread extends Thread {
     String Shared = "D:\\ServerClientSharedFile.txt";
     String Config = "D:\\Config.txt";
     int port;
-    //    String Shared = "C:\\Users\\Kimo Store\\Desktop\\ServerClientSharedFile.txt";
-    //    String configFilePath = "C:\\Users\\Kimo Store\\Desktop\\Config.txt";
     ServerClientThread(Socket inSocket, int counter
             , List<Hashtable<String,String>> mem, int[] no_Elements, List<String> ports, List<PortRange> unsortedPortRangeList, int RF, int port, SST lsm){
         serverClient = inSocket;
