@@ -6,10 +6,10 @@
 ![image](https://user-images.githubusercontent.com/58489322/188975883-3087e7ae-b692-41dd-818c-28810cbe50fb.png)
 
 ## Features
-1. LSM-Tree needs to be used as our storage data structure.
-2. Consistent Hashing will be used as our partition rebalancing strategy (Only adding a
+1. LSM-Tree needs is used as our storage data structure.
+2. Consistent Hashing is used as our partition rebalancing strategy (Only adding a
 new node should be supported).
-3. Leaderless replication will be used with configurable quorum sizes.
+3. Leaderless replication is used with configurable quorum sizes.
 
 ## The Operations and Data Flow
 Zarka have two kinds of applications:
@@ -26,7 +26,7 @@ Zarka Client will pick any Zarka Server nodes at random and it will be the coord
 execute his request.
 
 ## The Configuration File
-There will be a configuration file used by all nodes to define system parameters such as:
+There is a configuration file used by all nodes to define system parameters such as:
 - Number of Nodes
 - TCP ports for the nodes
 - Quorum Write
