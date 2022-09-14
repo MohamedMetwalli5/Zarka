@@ -33,4 +33,6 @@ There will be a configuration file used by all nodes to define system parameters
 - Quorum Read
 - Replication Factor
 
+## Its Created Logo
+![Zarka](https://user-images.githubusercontent.com/58489322/190137495-5c65ae51-82f3-4999-a3bf-e8f6cca1f5ce.png)
 
