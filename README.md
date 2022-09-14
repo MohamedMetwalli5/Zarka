@@ -34,5 +34,4 @@ There will be a configuration file used by all nodes to define system parameters
 - Replication Factor
 
 ## Its Created Logo
-![Zarka](https://user-images.githubusercontent.com/58489322/190137495-5c65ae51-82f3-4999-a3bf-e8f6cca1f5ce.png)
-
+![Zarka](https://user-images.githubusercontent.com/58489322/190138362-be8061e4-dc33-4b03-999d-4fa5e56525b9.png)
